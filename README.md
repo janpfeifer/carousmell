@@ -17,6 +17,12 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 | :---: | :---: |
 | ![Internal Engineering Layout](docs/diagram_1.jpg) | ![2D Airflow & Lid Cross-Section](docs/diagram_2.jpg) |
 
+| Parametric CAD — Exploded Assembly | Parametric CAD — XZ Airflow Cutaway |
+| :---: | :---: |
+| ![Parametric CAD Exploded Assembly](docs/render_exploded.png) | ![Parametric CAD XZ Airflow Cutaway](docs/render_cutaway.png) |
+
+> See [docs/cad_design_plan.md](docs/cad_design_plan.md) for the full parametric mechanical specification, Creality K1C DFM guidelines, and Go (`soypat/gsdf`) STL/visualization generator (`cad/`).
+
 ### How It Works
 1. **Plug-and-Play Startup:** On power-up, the stepper motor slowly rotates the carousel until the contactless Hall-effect sensor detects the single magnet under **Slot 0 (empty park slot)**.
 2. **Wait / Washout:** The device waits **30 minutes** completely silent, dark, and sealed (motor coils de-energized, fan off).
@@ -73,7 +79,7 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 ## Project Status & Next Steps
 
 - [x] Component selection finalized
-- [ ] **3D-Printed Enclosure & Carousel (`cad/`)** — *TBD: Parametric programmatic CAD scripts generating `.stl` / `.3mf` files*
+- [x] **3D-Printed Enclosure & Carousel (`cad/`)** — Parametric Go (`soypat/gsdf`) CAD generator exporting Creality K1C-ready `.stl` files, renders, and interactive viewer (see [docs/cad_design_plan.md](docs/cad_design_plan.md))
 - [ ] **Wiring Notes (`docs/wiring.md`)** — *TBD: Raspberry Pi 40-pin GPIO mapping used in my build*
 - [ ] **Software & OS Setup (`firmware/`)** — *TBD: Headless Pi OS setup, homing/stepping/PWM daemon, manual button handler, and read-only filesystem config*
 - [ ] **Raspberry Pi Pico Port (`firmware-pico/`)** — *Maybe later: lower-cost, instant-boot, unplug-safe microcontroller version*
@@ -90,10 +96,16 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 │   └── CERN-OHL-P-2.0.txt    # Hardware, CAD & documentation license
 ├── README.md
 ├── docs/
-│   ├── diagram_1.jpg         # Internal engineering layout (exploded view)
-│   ├── diagram_2.jpg         # 2D airflow & lid cross-section
+│   ├── cad_design_plan.md    # Parametric mechanical spec & Creality K1C DFM guide
+│   ├── diagram_1.jpg         # Internal engineering layout (concept)
+│   ├── diagram_2.jpg         # 2D airflow & lid cross-section (concept)
+│   ├── render_exploded.png   # Shaded 3D CAD exploded assembly render
+│   ├── render_cutaway.png    # Shaded 3D CAD XZ airflow cutaway render
+│   ├── render_isometric.png  # Shaded 3D CAD isometric render
+│   ├── cross_section.svg     # Exact SDF 2D cross-section & floorplan blueprint
+│   ├── viewer.html           # Standalone interactive 3D WebGL CAD viewer
 │   └── wiring.md             # Pin-by-pin wiring notes (TBD)
-├── cad/                      # Parametric CAD scripts & exported STL/3MF files (TBD)
+├── cad/                      # Parametric Go (soypat/gsdf) CAD scripts & CLI generators
 └── firmware/                 # Control script & systemd service (TBD)
 ```
 

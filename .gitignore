@@ -1,0 +1,6 @@
+# Local Go workspace override (points to local gsdf checkout)
+go.work
+go.work.sum
+
+# Generated high-triangle STL meshes (regenerate with: go run ./cad/cmd/generate)
+cad/out/
