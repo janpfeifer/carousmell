@@ -1,0 +1,16 @@
+Carousmell is dual-licensed by component type:
+
+1. Software & Firmware (`firmware/`, `firmware-pico/`, and other code/scripts):
+   Licensed under the Apache License, Version 2.0 (SPDX-License-Identifier: Apache-2.0).
+   See `LICENSES/Apache-2.0.txt`.
+
+2. Hardware, 3D CAD, & Documentation (`cad/`, `docs/`, `README.md`, wiring, and mechanical designs):
+   Licensed under the CERN Open Hardware Licence Version 2 - Permissive (SPDX-License-Identifier: CERN-OHL-P-2.0).
+   See `LICENSES/CERN-OHL-P-2.0.txt`.
+
+Unless otherwise explicitly stated in a file header, files fall under the license
+of their respective category above.
+
+Note: Neither license grants rights to third-party patents, nor provides any
+warranty of non-infringement or fitness for a particular purpose. See the
+respective license texts for full terms and disclaimers.
