@@ -7,7 +7,7 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 > [!Note]
 >
 > * **Personal Experiment & Disclaimer:** This repository is strictly personal documentation of a private, non-commercial hobby build, shared for informational and educational reference only. It is **not a certified medical device**, not a commercial product, and not medical advice or an instruction for others to build or use. Please consult a healthcare professional for medical advice regarding smell loss.
-> * There is some research on using smell overnight to improve memory, and on actively training with smell for smell rehabilitation, but nothing quite along the lines of what **Carousmell** is doing—this is purely experimental and **unproven**. New research appears every now and then, so it's worth checking the scientific literature directly.
+> * There is some research on using smell overnight to improve memory, and on actively training with smell for smell rehabilitation (see [Related Articles](#related-articles) below), but nothing quite along the lines of what **Carousmell** is doing—this is purely experimental and **unproven**. New research appears every now and then, so it's worth checking the scientific literature directly.
 
 ---
 
@@ -108,6 +108,24 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 ├── cad/                      # Parametric Go (soypat/gsdf) CAD scripts & CLI generators
 └── firmware/                 # Control script & systemd service (TBD)
 ```
+
+---
+
+## Related Articles
+
+The following peer-reviewed studies and systematic reviews provide scientific background on **olfactory training (olfactotherapy)** for smell rehabilitation and **olfactory enrichment** for memory and cognition. *(Note: most clinical smell-recovery protocols use active daytime sniffing, whereas overnight passive diffusion is a newer area primarily studied in the context of memory enrichment—Carousmell's overnight multi-scent approach remains an unproven personal experiment.)*
+
+### Smell Recovery & Olfactory Rehabilitation
+1. **Hummel et al. (2009)** — [Effects of olfactory training in patients with olfactory loss](https://doi.org/10.1002/lary.20101), *The Laryngoscope*. Foundational prospective trial introducing twice-daily 4-odorant olfactory training (rose, eucalyptus, lemon, clove) over 12 weeks, showing significant Sniffin' Sticks TDI improvements compared to non-training controls.
+2. **Hwang et al. (2023)** — [The Efficacy of Olfactory Training as a Treatment for Olfactory Disorders Caused by Coronavirus Disease-2019: A Systematic Review and Meta-Analysis](https://doi.org/10.1177/19458924221150977), *American Journal of Rhinology & Allergy*. Meta-analysis demonstrating clinically meaningful gains in objective odor threshold, discrimination, and identification scores for post-COVID-19 smell loss.
+3. **Delgado-Lima et al. (2024)** — [The efficacy of olfactory training in improving olfactory function: a meta-analysis](https://doi.org/10.1007/s00405-024-08733-7), *European Archives of Oto-Rhino-Laryngology*. Meta-analysis of 36 studies finding a moderate-to-large positive effect of olfactory training on smell recovery, influenced by training duration, age, and baseline severity.
+4. **Albazee et al. (2026)** — [Olfactory Training for COVID-19-related Olfactory Dysfunction: A Systematic Review and Meta-Analysis of Randomized Controlled Trials](https://doi.org/10.4274/tao.2026.2026-3-27), *Turkish Archives of Otorhinolaryngology*. Pooled analysis of 10 RCTs (*N* = 628) confirming statistically significant improvements in objective olfactory test scores and smell-related quality of life.
+
+### Overnight Olfactory Enrichment & Memory / Cognition
+5. **Woo et al. (2023)** — [Overnight olfactory enrichment using an odorant diffuser improves memory and modifies the uncinate fasciculus in older adults](https://doi.org/10.3389/fnins.2023.1200448), *Frontiers in Neuroscience*. Randomized controlled trial (*N* = 43, ages 60–85) exposing older adults to rotating nightly scents for 2 hours over 6 months, reporting a 226% improvement in verbal learning/memory (Rey Auditory Verbal Learning Test) alongside improved left uncinate fasciculus integrity on fMRI.
+6. **Vance et al. (2024)** — [Does Olfactory Training Improve Brain Function and Cognition? A Systematic Review](https://doi.org/10.1007/s11065-022-09573-0), *Neuropsychology Review*. Systematic review synthesizing clinical and neuroimaging evidence on how structured olfactory stimulation promotes neuroplasticity and cognitive benefits.
+7. **Burke et al. (2025)** — [Mind your nose: A randomized controlled trial of olfactory-based memory training for older people with subjective cognitive decline](https://doi.org/10.1002/trc2.70120), *Alzheimer's & Dementia: Translational Research & Clinical Interventions*. RCT showing olfactory-based memory training improved olfactory memory with positive transfer to untrained visual memory tasks in older adults with subjective cognitive decline.
+8. **Rokosz et al. (2025)** — [Olfactory training enhances semantic verbal fluency in healthy older adults, but only for individuals with low baseline performance](https://doi.org/10.1093/chemse/bjaf032), *Chemical Senses*. Controlled study finding that olfactory training improved semantic verbal fluency in healthy older adults, particularly those starting with lower baseline cognitive scores.
 
 ---
 
