@@ -4,6 +4,15 @@ This document specifies the mechanical architecture, dimensional constraints, to
 
 It is intended both as a human-readable design reference and as a verified specification matching the implemented Go CAD generator under `cad/`.
 
+> [!Note]
+> The **calibration_coupon.stl** was printed first, to check that the sizes are correct against the parts:
+>
+> 1. 3× 28BYJ-48 double-D stepper shaft bores: Tested at ShaftClearance - 0.10 mm, +0.00 mm, and +0.10 mm (marked with 1, 2, or 3 edge tick notches so you can tell which fit feels snug without cracking the hub).
+> 2. 1× 2 ml amber glass vial pocket: Ø12.6 mm blind pocket to verify the vials drop in smoothly without rattling or binding.
+> 3. 1× 5 × 2 mm homing magnet recess: Ø5.2 × 2.2 mm pocket to check press-fit/glue clearance.
+> 4. 1× M3 screw clearance hole + underside captive hex nut trap: Ø3.4 mm through-hole with a 5.8 mm AF hex recess.
+> 5. 1× M12 manual push-button hole: Ø12.3 mm hole to verify the threaded barrel of the ATX power button fits cleanly
+
 ---
 
 ## 1. Design Goals & Constraints
