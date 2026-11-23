@@ -21,7 +21,9 @@ Instead of running a single continuous scent that causes olfactory fatigue, the 
 | :---: | :---: |
 | ![Parametric CAD Exploded Assembly](docs/render_exploded.png) | ![Parametric CAD XZ Airflow Cutaway](docs/render_cutaway.png) |
 
-> See [docs/cad_design_plan.md](docs/cad_design_plan.md) for the full parametric mechanical specification, Creality K1C DFM guidelines, and Go (`soypat/gsdf`) STL/visualization generator (`cad/`).
+> [!Note]
+> * [3D interactive HTML+Javacript of the design](https://janpfeifer.github.io/carousmell/viewer.html)
+> * [Design Plan in docs/cad_design_plan.md](docs/cad_design_plan.md) for the full parametric mechanical specification, Creality K1C DFM guidelines, and Go (`soypat/gsdf`) STL/visualization generator (`cad/`).
 
 ### How It Works
 1. **Plug-and-Play Startup:** On power-up, the stepper motor slowly rotates the carousel until the contactless Hall-effect sensor detects the single magnet under **Slot 0 (empty park slot)**.
